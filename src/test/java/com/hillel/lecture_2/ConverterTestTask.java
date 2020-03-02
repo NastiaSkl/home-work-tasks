@@ -14,6 +14,7 @@ public class ConverterTestTask {
     private WeightConverter weightConverter = new WeightConverter();
     private SpeedConverter speedConverter = new SpeedConverter();
 
+
     @Test
     public void celsiusToFahrenheitTest() {
         double expectedResult = 50.0;
