@@ -24,7 +24,7 @@ public class Formulas {
         double degree =  0.12 * x;
         double multiplier1 = Math.exp(degree);
         double cbrt = Math.cbrt(multiplier1);
-        double result = (double)1/3 * (sqrt * cbrt) ;
+        double result = 1d/3d * (sqrt * cbrt) ;
 //        TODO implement formula 10
         return result;
     }
