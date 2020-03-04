@@ -22,9 +22,10 @@ public class Formulas {
         double e = Math.E;
         double sqrt =  Math.sqrt(Math.abs(Math.sin(x)));
         double degree =  0.12 * x;
-        double multiplier1 = Math.pow(e, degree);
+        double multiplier1 = Math.exp(degree);
         double cbrt = Math.cbrt(multiplier1);
-        double result = 1d/3d * (sqrt * cbrt) ;
+
+        double result = (sqrt * cbrt)/3.0 ;
 //        TODO implement formula 10
         return result;
     }
