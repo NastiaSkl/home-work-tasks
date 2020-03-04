@@ -18,15 +18,14 @@ public class Formulas {
 
     @Step
     public double calculate10Formula(double x) {
-
-        double e = Math.E;
-        double sqrt =  Math.sqrt(Math.abs(Math.sin(x)));
-        double degree =  0.12 * x;
-        double multiplier1 = Math.exp(degree);
-        double cbrt = Math.cbrt(multiplier1);
-
-        double result = (sqrt * cbrt)/3.0 ;
+        //double sqrt = Math.sqrt(Math.abs(Math.sin(x)));
+        //double degree = 0.12 * x;
+        //double multiplier1 = Math.exp(degree);
+        //double cbrt = Math.cbrt(multiplier1);
+        //double result = (1d * sqrt * cbrt)/3d ;
 //        TODO implement formula 10
+
+        double result = 1d/3d*Math.sqrt(Math.abs(Math.sin(x)))*Math.cbrt(Math.exp(0.12*x));
         return result;
     }
 
