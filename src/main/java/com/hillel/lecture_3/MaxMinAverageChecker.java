@@ -12,6 +12,9 @@ public class MaxMinAverageChecker {
 
 //        TODO implements result
         int result = 0;
+        if (c - (a + b) > 0){
+            result = c;
+        }
 
         return result;
     }
@@ -21,6 +24,9 @@ public class MaxMinAverageChecker {
 
 //        TODO implements result
         int result = 0;
+        if (a < b && b < c){
+            result = b;
+        }
 
         return result;
     }
@@ -30,7 +36,23 @@ public class MaxMinAverageChecker {
 
 //        TODO implements result
         int result = 0;
+        if (a > b && a > c) {
+            result = a;
+        }
 
         return result;
     }
+
+    @Step
+    public int getThanAllNumberShouldNotBeEquals(int a, int b , int c) {
+
+//        TODO implements result
+        int result = 0;
+        if (a == b && b == c && a == c) {
+            result = result;
+        }
+
+        return result;
+    }
+
 }

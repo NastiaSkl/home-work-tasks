@@ -13,6 +13,13 @@ public class NumberCompareChecker {
 //        TODO implements result
         String result = "";
 
+        if (b - a > 0){
+            result = "Number " + b + " has greatest value!";
+        } else if (b - a < 0){
+            result = "Number " + a + " has greatest value!";
+        } else if ( b == a){
+            result = "Numbers " + a + " and " + b + " are equals!";
+        }
         return result;
     }
 }

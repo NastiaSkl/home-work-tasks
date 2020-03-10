@@ -11,8 +11,16 @@ public class OddEvenChecker {
     public String checkNumber(int number) {
 
 //        TODO implements result
+
         String result = "";
 
+        if (number % 2 == 0) {
+            result = "Even Number";
+        } else {
+            result = "Odd Number";
+        }
+
+        System.out.println("BYE");
         return result;
     }
 }
