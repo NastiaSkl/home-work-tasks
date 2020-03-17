@@ -1,6 +1,5 @@
 package com.hillel.lecture_4;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import io.qameta.allure.Step;
 
 /**
