@@ -25,6 +25,19 @@ package com.hillel.basic.exam;
 public class SequenceSum {
 
     public static String showSequence(int value) {
-        return null;
+        String result = " ";
+        String [] numbersArray = new String [value + 1];
+        int sum = 0;
+
+        for (int i = 0; i <= value ; i++) {
+            numbersArray[i] = Integer.toString(i);
+            sum += i;
+        }
+
+        result = String.join( "+", numbersArray) + " = " + sum;
+        return result;
     }
+
+
+
 }
