@@ -1,6 +1,6 @@
 package com.hillel.lecture_6;
 
-import com.sun.media.sound.SF2InstrumentRegion;
+
 import io.qameta.allure.Step;
 
 /**
