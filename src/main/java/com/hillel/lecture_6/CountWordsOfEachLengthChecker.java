@@ -2,6 +2,8 @@ package com.hillel.lecture_6;
 
 import io.qameta.allure.Step;
 
+import java.util.Arrays;
+
 /**
  * Created by alpa on 11/2/19
  */
@@ -13,8 +15,17 @@ public class CountWordsOfEachLengthChecker {
 //        TODO implements result
         int result = 0;
 
-        return result;
+        sentence = sentence.replace(",", "").replace(".", "");
+        String[] splittedWord = sentence.split(" ");
+        int wordCount = 0;
+
+        for (String element:splittedWord) {
+            if (element.length() == wordLength) {
+                wordCount++;
+            }
+        }
+            result = wordCount;
+            return result;
+        }
     }
 
-
-}

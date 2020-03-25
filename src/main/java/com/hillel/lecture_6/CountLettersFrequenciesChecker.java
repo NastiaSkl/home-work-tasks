@@ -14,6 +14,18 @@ public class CountLettersFrequenciesChecker {
 //        TODO implements result
         String result = "";
 
-        return result;
+        char[] textLettersArray = text.toCharArray();
+
+        int times = 0;
+
+            for (int i = 0; i < textLettersArray.length; i++) {
+                if (textLettersArray[i] == letter)
+                    times ++;
+            }
+
+
+    result = "Character " + "'" + letter + "'" + " repeated " + times + " times";
+    return result;
+
     }
 }
